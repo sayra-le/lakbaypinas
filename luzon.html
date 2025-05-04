@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luzon Tour</title>
+    <link rel="stylesheet" href="css/luzvimin.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <section class="hero" style="background: url('luzonimg/volcano.jpg') no-repeat center center/cover;">
+        <h1>LUZON</h1>
+        <p>Tour-hike that you'll want to return to again</p>
+        <a href="https://www.britannica.com/place/Luzon" target="_blank">
+            <button class="join-button">Discover</button>
+        </a>   
+    </section>
+    
+
+    <section class="discover">
+        <h2>Discover Luzon</h2>
+
+        <div class="card-grid">
+            <div class="place-card">
+                <img src="luzonimg/burnham.jpg" alt="Shadowpeak Canyon">
+                <h3>Burnham Park in Baguio City, Philippines</h3>
+                <a href="luzon/burnham.html">
+                    <button>View Details</button>
+                  </a>
+            </div>
+            <div class="place-card">
+                <img src="luzonimg/volcano.jpg" alt="Mayon Volcano">
+                <h3>Mayon Volcano, Philippine</h3>
+                <a href="luzon/mayon.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="luzonimg/taal.jpg" alt="Tagaytay">
+                <h3>Taal Lake in Batangas, Philippine</h3>
+                <a href="luzon/taal.html">
+                <button>View Details</button>
+                </a>
+            </div>
+            <div class="place-card">
+                <img src="luzonimg/intra.jpg" alt="Intra">
+                <h3>Intramuros in Manila, Philippines</h3>
+                <a href="luzon/intramuros.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="luzonimg/samaguing.jpg" alt="Golden Dunes">
+                <h3>Sumaguing Cave, Philippines</h3>
+                <a href="luzon/sumaguing.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="luzonimg/hundred.jpg" alt="Mystic Forest">
+                <h3>Hundred Islands in Pangasinan, Philippines</h3>
+                <a href="luzon/hundred.html">
+                <button>View Details</button>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING BUTTON SECTION -->
+    <div class="floating-container">
+        <button class="main-button">Regions</button>
+        <div class="sub-buttons">
+            <a href="luzon.html"><button>Luzon</button></a>
+            <a href="visayas.html"><button>Visayas</button></a>
+            <a href="mindanao.html"><button>Mindanao</button></a>
+        </div>
+        <br>
+        <a href="home.html" class="main-button">Home</a>
+    </div>
+    </div>
+
+    <script>
+        const mainButton = document.querySelector('.main-button');
+        const subButtons = document.querySelector('.sub-buttons');
+
+        mainButton.addEventListener('click', () => {
+            subButtons.classList.toggle('show');
+        });
+    </script>
+
+<div id="footer"></div>
+<script src="javascript/footer.js"></script>
+
+</body>
+</html>

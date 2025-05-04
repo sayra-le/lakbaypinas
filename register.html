@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .form-section {
+      width: 50%;
+      background-color: #fff;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .form-section h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .form-section input {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .form-section input.error {
+      border: 2px solid red;
+    }
+
+    .form-section button {
+      padding: 14px;
+      background-color: #2c5748;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-section button:hover {
+      background-color: #244a3c;
+    }
+
+    .form-footer {
+      margin-top: 10px;
+    }
+
+    .form-footer a {
+      color: #2c5748;
+      text-decoration: none;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .social-icons img {
+      width: 30px;
+      cursor: pointer;
+    }
+
+    .image-section {
+      width: 50%;
+      margin: 30px;
+      background-image: url('images/loginimage.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="form-section">
+    <h1>Create your account</h1>
+    <div class="social-icons">
+        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" width="35">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" width="35">
+      </div>
+    <p>or sign up with email</p>
+    <input type="text" id="fullname" placeholder="Full name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button>Register</button>
+    <div class="form-footer">
+      Already have an account? <a href="login.html">Log in</a>
+    </div>
+  </div>
+
+  <div class="image-section"></div>
+</div>
+
+<script src="javascript/reg.js"></script>
+
+</body>
+</html>

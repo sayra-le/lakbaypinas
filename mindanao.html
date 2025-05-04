@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mindanao Tour</title>
+    <link rel="stylesheet" href="css/luzvimin.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="hero" style="background: url('mindanaoimg/Philippines.jpg') no-repeat center center/cover;">
+        <h1>Mindanao</h1>
+        <p>Tour-hike that you'll want to return to again</p>
+        <a href="https://www.britannica.com/place/Mindanao" target="_blank">
+            <button class="join-button">Discover</button>
+        </a>        
+    </section>
+
+    <section class="discover">
+        <h2>Discover Mindanao</h2>
+        <div class="card-grid">
+            <!-- place cards here -->
+            <div class="place-card">
+                <img src="mindanaoimg/eagle.jpg" alt="Philippine Eagle">
+                <h3>Philippine Eagle Center in Davao, Philippine</h3>
+                <a href="mindanao/eaglecenter.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+            <div class="place-card">
+                <img src="mindanaoimg/enchanted.jpg" alt="Mayon Volcano">
+                <h3>Enchanted River in Hinatuan, Philippine</h3>
+                <a href="mindanao/enchanted.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="mindanaoimg/camiguin.jpg" alt="Tagaytay">
+                <h3>Camiguin Island, Philippine</h3>
+                <a href="mindanao/camiguin.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="mindanaoimg/mosque.jpg" alt="Intra">
+                <h3>The Grand Mosque in Cotabato, Philippines</h3>
+                <a href="mindanao/mosque.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="mindanaoimg/mountapo.jpg" alt="Golden Dunes">
+                <h3>Mount Apo, Philippines</h3>
+                <a href="mindanao/mtapo.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="mindanaoimg/samal.jpg" alt="Silver Shores">
+                <h3>Island Garden City of Samal, Philippines</h3>
+                <a href="mindanao/samal.html">
+                <button>View Details</button>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING BUTTON SECTION -->
+    <div class="floating-container">
+        <button class="main-button">Regions</button>
+        <div class="sub-buttons">
+            <a href="luzon.html"><button>Luzon</button></a>
+            <a href="visayas.html"><button>Visayas</button></a>
+            <a href="mindanao.html"><button>Mindanao</button></a>
+        </div>
+        <br>
+        <a href="home.html" class="main-button">Home</a>
+    </div>
+    </div>
+    
+
+    <script>
+        const mainButton = document.querySelector('.main-button');
+        const subButtons = document.querySelector('.sub-buttons');
+
+        mainButton.addEventListener('click', () => {
+            subButtons.classList.toggle('show');
+        });
+    </script>
+
+<div id="footer"></div>
+<script src="javascript/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LUZON Tour</title>
+    <link rel="stylesheet" href="css/luzvimin.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <section class="hero" style="background: url('visayasimg/vis.jpg') no-repeat center center/cover;">
+        <h1>VISAYAS</h1>
+        <p>Tour-hike that you'll want to return to again</p>
+        <a href="https://www.britannica.com/place/Visayan-Islands" target="_blank">
+          <button class="join-button">Discover</button>
+      </a>   
+    </section>
+    
+
+    <section class="discover">
+        <h2>Discover Visayas</h2>
+
+        <div class="card-grid">
+            <div class="place-card">
+                <img src="visayasimg/magellan.jpg" alt="Shadowpeak Canyon">
+                <h3>Magellan's Cross in Cebu, Philippine</h3>
+                <a href="visayas/magellan.html">
+                    <button>View Details</button>
+                  </a>
+            </div>
+            <div class="place-card">
+                <img src="visayasimg/bantaya.jpg" alt="Mayon Volcano">
+                <h3>Bantayan Island, Philippine</h3>
+                <a href="visayas/bantayan.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="visayasimg/kawasan.jpeg" alt="Tagaytay">
+                <h3>Kawasan Falls in Cebu, Philippine</h3>
+                <a href="visayas/kawasan.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="visayasimg/choco.jpg" alt="Intra">
+                <h3>Chocolate Hills in Bohol, Philippines</h3>
+                <a href="visayas/chocolate.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="visayasimg/1730.jpg" alt="Golden Dunes">
+                <h3>1730 Jesuit House in Cebu, Philippines</h3>
+                <a href="visayas/1730.html">
+                <button>View Details</button>
+            </a>
+            </div>
+            <div class="place-card">
+                <img src="visayasimg/boarcay.jpg" alt="Mystic Forest">
+                <h3>Boracay in Aklan, Philippines</h3>
+                <a href="visayas/boracay.html">
+                <button>View Details</button>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING BUTTON SECTION -->
+    <div class="floating-container">
+        <button class="main-button">Regions</button>
+        <div class="sub-buttons">
+            <a href="luzon.html"><button>Luzon</button></a>
+            <a href="visayas.html"><button>Visayas</button></a>
+            <a href="mindanao.html"><button>Mindanao</button></a>
+        </div>
+        <br>
+        <a href="home.html" class="main-button">Home</a>
+    </div>
+    </div>
+
+    <div id="footer"></div>
+<script src="javascript/footer.js"></script>
+
+  <script>
+      const mainButton = document.querySelector('.main-button');
+      const subButtons = document.querySelector('.sub-buttons');
+
+      mainButton.addEventListener('click', () => {
+          subButtons.classList.toggle('show');
+      });
+  </script>
+
+  
+
+</body>
+</html>

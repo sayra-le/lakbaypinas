@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  color: white; 
+}
+
+
+.navbar {
+  width: 100%;
+  background-color:  #263520;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white; 
+  text-decoration: none;
+  font-size: 15px;
+  padding: 4px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  background-color: #263520;
+  border-top: 2px solid white;
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  padding: 8px 12px;
+  white-space: nowrap;
+  display: block;
+  font-size: 14px;
+  color: white; 
+}
+
+.dropdown-content a:hover {
+  background-color: #fff;
+  color: #263520;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+
+.dropdown:hover > .dropbtn {
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #263520;
+    padding: 1rem;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    display: none;
+  }
+
+  .navbar.open .nav-links {
+    display: flex;
+  }
+}
+
+.site-footer {
+  background-color: #111;
+  color: #fff;
+  padding: 30px 50px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-top: 1px solid #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-right h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-right p {
+  margin: 3px 0;
+}
+
