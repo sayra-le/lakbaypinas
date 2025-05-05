@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
           if (loggedInName) {
               const nav = document.querySelector(".nav-links");
 
-              // Create Logout button
               const logoutItem = document.createElement("li");
               const logoutLink = document.createElement("a");
               logoutLink.href = "#";
