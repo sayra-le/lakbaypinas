@@ -1,9 +1,8 @@
 const apiKey = '5ae1e95886564a2e91f172853252804';
 
-// Get the current page name to decide which city to load weather for
-let currentPage = window.location.pathname.split('/').pop();  // Get the page name (e.g., baguio.html)
+let currentPage = window.location.pathname.split('/').pop();  
 
-let city = '';  // Default city
+let city = '';  
 
 if (currentPage === 'burnham.html') {
   city = 'Burnham Park';
@@ -52,7 +51,7 @@ if (currentPage === 'burnham.html') {
 }else if (currentPage === 'camiguin.html') {
   city = 'Camiguin Island';
 } else {
-  city = 'Default Location';  // If the page is not identified
+  city = 'Default Location';  
 }
 
 const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
