@@ -12,8 +12,7 @@ function login() {
 
     if (email === storedUser.email && password === storedUser.password) {
         alert("Login successful!");
-
-        // Save name in cookie
+        
         document.cookie = `loggedInName=${storedUser.name}; path=/`;
 
         window.location.href = 'home.html';
