@@ -179,9 +179,9 @@ body, html {
   background-color: #47663b;
   color: white;
   border: none;
-  border-radius: 8px; /* small rounded corners */
-  width: 120px; /* same width as the sub-buttons */
-  height: 45px; /* adjust height for a nice button */
+  border-radius: 8px; 
+  width: 120px; 
+  height: 45px; 
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -204,7 +204,7 @@ body, html {
   margin-top: 10px;
   display: none;
   flex-direction: column;
-  align-items: center; /* center the sub-buttons */
+  align-items: center; 
 }
 
 .sub-buttons.show {
@@ -221,7 +221,7 @@ body, html {
   cursor: pointer;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
   transition: background-color 0.3s;
-  width: 120px; /* uniform width for all sub buttons */
+  width: 120px; 
   font-size: 16px;
 }
 
