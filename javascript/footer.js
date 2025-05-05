@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Determine the correct path to the footer.html based on the current location
+  
     let path = window.location.pathname.includes('luzon') ||
                window.location.pathname.includes('visayas') ||
                window.location.pathname.includes('mindanao')
